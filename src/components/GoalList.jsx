@@ -5,6 +5,7 @@ function GoalList(props) {
     <ul>
       <GoalItem title="Learn React and other Frameworks" />
       <GoalItem title="Design and Code Applications" />
+      <GoalItem title="Solve Issues with  Applications" />
     </ul>
   );
 }
