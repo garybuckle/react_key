@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 function Mail() {
-  const [errorMsg, setErrorMsg] = useState('No Error');
+  const [errorMsg, setErrorMsg] = useState('Mail not checked');
   function handleMailInput(event) {
     const enteredMail = event.target.value;
     if (enteredMail.trim() === '' || !enteredMail.includes('@')) {
