@@ -6,12 +6,15 @@ function NewsLetter() {
     newsTitle: '',
     newsText: '',
   });
-  const changeNewsDataHandler = (event) => {
-    if (newsData.newsTitle.length > 12) {
-      alert('Too many characters');
-    }
+  const changeNewsTitleHandler = (event) => {
     setNewsData({
       newsTitle: event.target.value,
+      newsText: newsData.newsText,
+    });
+  };
+  const changeNewsTextHandler = (event) => {
+    setNewsData({
+      newsTitle: newsData.newsTitle,
       newsText: event.target.value,
     });
   };
@@ -23,20 +26,22 @@ function NewsLetter() {
     <div className="newsletter">
       <div className="title">Newsletter</div>
       <input
+        value={newsData.newsTitle}
         type="text"
         placeholder=" News Headline"
-        onChange={changeNewsDataHandler}
+        onChange={changeNewsTitleHandler}
       />
-      <p>{newsData.newsTitle.length} characters</p>
+      <p>{newsData.newsTitle.length} Characters</p>
       <input
+        value={newsData.newsText}
         type="text"
         placeholder=" Main News Text"
-        onChange={changeNewsDataHandler}
+        onChange={changeNewsTextHandler}
       />
       {newsData.newsText.length} Characters
       <div>
         <button type="submit">Submit</button>
-        <button onClick={resetNewsFields}>Clear Field</button>
+        <button onClick={resetNewsFields}>Clear Fields</button>
       </div>
     </div>
   );

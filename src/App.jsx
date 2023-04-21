@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg';
 import Header from './components/Header';
 import LogIn from './components/LogIn';
 import NewsLetter from './components/NewsLetter';
+import Counter from './components/Counter';
 import './App.css';
 
 function App() {
