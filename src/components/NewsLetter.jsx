@@ -2,25 +2,41 @@ import React from 'react';
 import { useState } from 'react';
 
 function NewsLetter() {
-  const [email, setEmail] = useState('');
-  const changeEmailHandler = (event) => {
-    setEmail(event.target.value);
+  const [newsData, setNewsData] = useState({
+    newsTitle: '',
+    newsText: '',
+  });
+  const changeNewsDataHandler = (event) => {
+    if (newsData.newsTitle.length > 12) {
+      alert('Too many characters');
+    }
+    setNewsData({
+      newsTitle: event.target.value,
+      newsText: event.target.value,
+    });
   };
 
-  const resetNewsLeterField = (event) => {
-    setEmail('');
+  const resetNewsFields = () => {
+    setNewsData({ newsTitle: '', newsText: '' });
   };
   return (
-    <div>
+    <div className="newsletter">
       <div className="title">Newsletter</div>
       <input
-        type="email"
-        placeholder=" Your Mail Address"
-        value={email}
-        onChange={changeEmailHandler}
+        type="text"
+        placeholder=" News Headline"
+        onChange={changeNewsDataHandler}
       />
+      <p>{newsData.newsTitle.length} characters</p>
+      <input
+        type="text"
+        placeholder=" Main News Text"
+        onChange={changeNewsDataHandler}
+      />
+      {newsData.newsText.length} Characters
       <div>
-        <button onClick={resetNewsLeterField}>Clear Field</button>
+        <button type="submit">Submit</button>
+        <button onClick={resetNewsFields}>Clear Field</button>
       </div>
     </div>
   );

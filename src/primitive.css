@@ -556,7 +556,7 @@ dd {
   margin-bottom: 0.5rem;
 }
 
-/* The bits I have added */
+/* Custom bits I have added */
 .header {
   display: flex;
   align-items: center;
@@ -568,6 +568,14 @@ dd {
 .title {
   font-size: 2rem;
   color: steelblue;
+}
+
+.login {
+  margin-right: 2rem;
+}
+
+.newsletter button {
+  margin-right: 2rem;
 }
 
 /* -------------------- */

@@ -20,7 +20,7 @@ function LogIn() {
   };
   return (
     <>
-      <div>
+      <div className="login">
         <input
           placeholder="Type in your Email Address"
           type="email"
