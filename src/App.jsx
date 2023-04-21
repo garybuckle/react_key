@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import GoalList from "./components/GoalList";
 import Header from "./components/Header";
+import Mail from "./components/Mail";
 import "./App.css";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <h1>Vite + React</h1>
       <div className="small-container">
         <Header />
-        <GoalList />
+        <Mail />
       </div>
     </div>
   );

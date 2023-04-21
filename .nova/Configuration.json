@@ -5,12 +5,10 @@
   ],
   "eablokker.tabsSidebar.config.customTabOrder" : [
     "\/Users\/garybuckle\/Coding\/react_key\/src\/App.jsx",
-    "\/Users\/garybuckle\/Coding\/react_key\/src\/components\/FirstGoal.jsx",
     "\/Users\/garybuckle\/Coding\/react_key\/src\/components\/Header.jsx",
-    "\/Users\/garybuckle\/Coding\/react_key\/src\/components\/GoalList.jsx",
-    "\/Users\/garybuckle\/Coding\/react_key\/src\/components\/GoalItem.jsx",
-    "\/Users\/garybuckle\/Coding\/react_key\/src\/primitive.css",
-    "\/Users\/garybuckle\/Coding\/react_key\/src\/components\/SecondGoal.jsx",
-    "\/Users\/garybuckle\/Coding\/react_key\/src\/components\/ThirdGoal.jsx"
-  ]
+    "\/Users\/garybuckle\/Coding\/react_key\/src\/components\/Mail.jsx",
+    "\/Users\/garybuckle\/Coding\/react_key\/src\/primitive.css"
+  ],
+  "prettier.default-config.singleQuote" : "Enable",
+  "workspace.name" : "react_key"
 }
