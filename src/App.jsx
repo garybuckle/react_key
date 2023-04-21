@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import Header from './components/Header';
 import LogIn from './components/LogIn';
+import NewsLetter from './components/NewsLetter';
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <h1>Vite + React</h1>
       <div className="small-container">
         <Header />
-        <LogIn />
+        <NewsLetter />
       </div>
     </div>
   );
