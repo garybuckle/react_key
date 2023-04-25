@@ -14,6 +14,10 @@ function App() {
   const updateTermHandler = (event) => {
     setSearchTerm(event.target.value);
   };
+  const [clearScreen, setClearScreen] = useState(false);
+  const clearSreenHandler = (event) => {
+    setClearScreen(clearScreen ? false : true);
+  };
 
   return (
     <div className="App">
@@ -26,11 +30,22 @@ function App() {
         </a>
       </div>
       <h1>garybuckle and ....Vite + React</h1>
-      <div className="small-container">
-        <Header />
-        <SearchBar onUpdateSearch={updateTermHandler} />
-        <OverView currentTerm={searchTerm} />
+      <div>
+        <button onClick={clearSreenHandler}>
+          {clearScreen ? 'Show Screen' : 'Clear Screen'}
+        </button>
       </div>
+      {!clearScreen ? (
+        <div className="small-container">
+          <Header />
+          <NewsLetter />
+          <Mail />
+          <div>
+            <SearchBar onUpdateSearch={updateTermHandler} />
+            <OverView currentTerm={searchTerm} />
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
