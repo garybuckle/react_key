@@ -579,6 +579,12 @@ dd {
   margin-top: 2rem;
 }
 
+.mail-msg {
+  width: 800px;
+  height: auto;
+  border: 1px solid steelblue;
+}
+
 /* -------------------- */
 
 .full-container {
